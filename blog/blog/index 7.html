@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Form </title>
+</head>
+
+<body style="background-color:pink;" font-family: Verdana;">
+
+<marquee style="background-color: pink;"> <h1 style="color: black;"> VACCINATION FORM </h1>
+</marquee>
+<hr>
+<br> <br>  
+<body> 
+<form> 
+  <label for="name">Full Name (Last, First, Middle):</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="dob">Date of Birth:</label><br>
+  <input type="text" id="dob" name="dob"><br><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address"><br><br>
+  <label for="contact information">Contact Information (Email or Contact number):</label><br>
+  <input type="text" id="contact information" name="contact information">
+</form> 
+<p>Sex:</p>
+<form> 
+  <input type="radio" id="Male" name="Male">
+  <label for="Male">Male</label><br> 
+  <input type="radio" id="Female" name="Female">
+  <label for="Female">Female</label><br> 
+  <label for="Other">Other:<label><br>
+  <input type="text" id="Other" name="Other">
+<hr>
+<p>Are you already fully vaccinated?</p>
+<form>
+ <input type="checkbox" id="question" name="question">
+ <label for="question">Yes, I am fully vaccinated.</label><br>
+ <input type="checkbox" id="question" name="question">
+ <label for="question">No, I am not fully vaccinated.</label><br>
+ <input type="checkbox" id="question" name="question">
+ <label for="question">No, I am not vaccinated.</label> <br>
+ <label for="vaccines">Choose the type vaccine you took, and if No, then please skip:</label>
+ <select id="vaccines" name="vaccines">
+  <option value="Pfizer">Pfizer</option>
+  <option value="Moderna">Moderna</option>
+  <option value="Sinovac">Sinovac</option>
+  <option value="Janssen">Janssen</option>
+  <option value="Astrazenica">Astrazenica</option>
+  <option value="Sinopharm">Sinopharm</option>
+ </select>
+</form>
+<hr>
+<p> What side effects did you have after getting vaccinated?</p>
+<form action="/action_page.php">
+ <textarea name="write here" rows="7" cols="40"> Write your answer here</textarea><br>
+</form>
+<hr>
+<p>Were you sick before taking the vaccine?</p>
+<form>
+ <input type="checkbox" id="question" name="question" value="Yes">
+ <label for="question">Yes</label><br>
+ <input type="checkbox" id="question" name="question" value="No">
+ <label for="question">No</label><br>
+</form>
+<hr>
+<p> What allergies did you have when they interviewed you before the vaccine? </p>
+<form>
+ <textarea name="write here" rows="7" cols="40"> Write your answer here</textarea><br>
+</form> <br>
+<p><strong> IF YOU DID NOT TAKE ANY VACCINES, PLEASE SKIP THESE. THANK YOU!</strong></p>
+<hr>
+<p><strong> Thank you for filling this form up if you did!</strong></p>
+<input type="button" onclick="alert('Hi thank you for looking at or filling up our form! :))')" value="Click me!">
+<input type="Submit" value="Submit">
+</body>
+</html>
